@@ -941,7 +941,7 @@ namespace osu.Game.Screens.Edit
         private List<MenuItem> createFileMenuItems() => new List<MenuItem>
         {
             new EditorMenuItem("Save", MenuItemType.Standard, () => Save()),
-            new EditorMenuItem("Export package", MenuItemType.Standard, exportBeatmap) { Action = { Disabled = !RuntimeInfo.IsDesktop } },
+            new EditorMenuItem("Export package", MenuItemType.Standard, exportBeatmap),
             new EditorMenuItemSpacer(),
             createDifficultyCreationMenu(),
             createDifficultySwitchMenu(),
